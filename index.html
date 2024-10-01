@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>EduQuizz</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </div>
+
+        <div class="main-section">
+            <label class="toggle-button">
+
+                <i class="fa fa-sun" aria-hidden="true"></i>
+                <input type="checkbox" onclick="toggleTheme()">
+                <i class="fa fa-moon-o" style="font-size:24px"></i>
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="footer">
+
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
